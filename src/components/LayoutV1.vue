@@ -30,7 +30,7 @@ export default {
     msg: String
   }
 }
- import{getMakeupData} from '@/services/api/makeupAPI.js'
+ import{getMakeupData} from '@/services/api/countriesAPI.js'
  console.log(getMakeupData)
 </script>
 

@@ -1,19 +1,22 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <HeaderV1 msg="Welcome to Your Vue.js App"/>
-  <CountryCard/>
+  <NavBar msg="Welcome to Your Vue.js App" />
+  <HeaderV1 />
+  <CountryCard />
 </template>
 
 <script>
 import HeaderV1 from './components/HeaderV1.vue'
+import NavBar from './components/NavBar.vue'
 import CountryCard from './components/CountryCard.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderV1,
+    NavBar,
     CountryCard
-}
+  }
 }
 </script>
 

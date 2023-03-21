@@ -16,7 +16,7 @@
         <strong>{{ country.languages.length > 1 ? 'Langues officielles : ' : 'Langue officielle : ' }}</strong>
         <span v-for="(language, index) in country.languages" :key="index">
           {{ language.name }}
-          <span v-if="index < country.languages.length - 1">, </span>
+          <span v-if="index < country.languages.length - 1">- </span>
         </span>
       </p>
       <p>

@@ -1,4 +1,9 @@
 <template>
+  <div class="select-container">
+    <i-select v-model="selected" :options="options" autocomplete placeholder="Choose something.." @search="onSearch"
+      clearable />
+  </div>
+
   <div class="container">
     <i-card v-for="country in countries" :key="country.alpha3Code" class="country-card" color="light">
       <template #image>
@@ -36,9 +41,27 @@ export default {
     msg: String
   },
   data() {
+    const defaultOptions = [
+      { id: 1, label: 'Nom pays par ordre croissant' },
+      { id: 2, label: 'Nom pays par ordre décroissant' },
+      { id: 3, label: "Nombre d'habitants par ordre croissant" },
+      { id: 4, label: "Nombre d'habitants par ordre décroissant" }
+    ];
+
     return {
-      countries: []
+      countries: [],
+      selected: null,
+      options: defaultOptions,
+      defaultOptions
     };
+  },
+  methods: {
+    onSearch(query) {
+      this.options = this.defaultOptions
+        .filter((option) => {
+          return option.label.toLowerCase().includes((query || '').toLowerCase());
+        });
+    }
   },
   mounted() {
     getAllCountries()
@@ -74,5 +97,19 @@ export default {
 
 .card-title {
   text-align: center;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 50%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.i-select {
+  width: 50%;
 }
 </style>

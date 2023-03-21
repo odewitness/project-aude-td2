@@ -1,5 +1,5 @@
 <template>
-    <i-header id="cover-header" cover class="_text-align:center _color:black">
+    <i-header id="cover-header" cover class="_text-align:center _color:white">
         <h1 class="text">Découvrez les pays du monde</h1>
         <p class="text">Comparez et triez de nombreuses données concernant tous les pays de la planète !</p>
         <i-button color="primary">C'est parti !</i-button>

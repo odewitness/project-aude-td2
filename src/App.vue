@@ -1,22 +1,30 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <NavBar msg="Welcome to Your Vue.js App" />
-  <HeaderV1 />
-  <CountryCard />
+
+  <NavbarDesign msg="Welcome to Your Vue.js App" />
+  <HeaderDesign />
+  <MainContent />
+  <ScrollToTopButton />
+  <FooterDesign />
 </template>
 
 <script>
-import HeaderV1 from './components/HeaderV1.vue'
-import NavBar from './components/NavBar.vue'
-import CountryCard from './components/CountryCard.vue';
+import NavbarDesign from './components/NavbarDesign.vue'
+import HeaderDesign from './components/HeaderDesign.vue'
+import MainContent from './components/MainContent.vue'
+import ScrollToTopButton from './components/ScrollToTopButton.vue';
+import FooterDesign from './components/FooterDesign.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderV1,
-    NavBar,
-    CountryCard
-  }
+    NavbarDesign,
+    HeaderDesign,
+    MainContent,
+    ScrollToTopButton,
+    FooterDesign
+  },
+
 }
 </script>
 

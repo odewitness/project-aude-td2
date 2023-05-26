@@ -63,10 +63,8 @@ ul {
 }
 
 .footer-col {
-    /* width: 33.33%; */
     flex-basis: 33.33%;
     padding: 0 7%;
-    /* background-color: aliceblue; */
 }
 
 .footer-col h4 {

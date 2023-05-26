@@ -38,7 +38,6 @@ export default {
     props: {
         visible: {
             type: Boolean,
-            required: false,
         },
         country: {
             type: Object,

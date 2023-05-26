@@ -48,14 +48,12 @@
 import { getAllCountries } from '@/services/api/countriesAPI.js';
 import SearchInput from '@/components/SearchInput.vue'
 import SortDropdown from '@/components/SortDropdown.vue'
-import FilterButtons from '@/components/FilterButtons.vue'
+import FilterButtons from '@/components/Filter/FilterButtons.vue'
 import CardDesign from '@/components/CardsDesign.vue'
 import ReinitializeButton from '@/components/ReinitializeButton.vue'
-import DisplayTitleFilter from '@/components/DisplayTitleFilter.vue'
+import DisplayTitleFilter from '@/components/Filter/DisplayTitleFilter.vue'
 import DisplayNumberMatch from '@/components/DisplayNumberMatch.vue'
-// import PaginationActivated from '@/components/PaginationActivated.vue'
-// import TogglePagination from '@/components/TogglePagination.vue'
-import NoResult from '@/components/NoResult.vue'
+import NoResult from '@/components/Layout/NoResult.vue'
 
 export default {
   name: 'MainContent',
@@ -71,8 +69,6 @@ export default {
     DisplayTitleFilter,
     DisplayNumberMatch,
     NoResult
-    // TogglePagination
-    // PaginationActivated
   },
   data() {
     return {

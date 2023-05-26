@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import NavbarDesign from './components/NavbarDesign.vue'
-import HeaderDesign from './components/HeaderDesign.vue'
+import NavbarDesign from './components/Layout/NavbarDesign.vue'
+import HeaderDesign from './components/Layout/HeaderDesign.vue'
 import MainContent from './components/MainContent.vue'
-import ScrollToTopButton from './components/ScrollToTopButton.vue';
-import FooterDesign from './components/FooterDesign.vue';
+import ScrollToTopButton from './components/Layout/ScrollToTopButton.vue';
+import FooterDesign from './components/Layout/FooterDesign.vue';
 
 export default {
   name: 'App',

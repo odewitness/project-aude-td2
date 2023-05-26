@@ -5,7 +5,7 @@
         <!-- NOTE : Plusieurs balises <template> ci-après car utilisation de la librairie Inkline pour créer les cards  -->
         <i-card>
             <template #image>
-                <img :src="country.flag" alt="" style="max-height: 200px; width: auto;">
+                <img :src="country.flag" alt="">
             </template>
 
             <template #header>
@@ -15,7 +15,7 @@
             </template>
 
             <p>
-                <strong>Capitale :</strong> {{ country.capital }}
+                <strong>Capitale : </strong> {{ country.capital }}
             </p>
 
             <p>
@@ -26,7 +26,7 @@
             </p>
 
             <p>
-                <strong>Population :</strong>
+                <strong>Population : </strong>
                 <!-- PETIT + : On formate le nombre d'habitants à la française et on adapte l'affichage s'il y a moins d'1 habitant -->
                 {{ country.population.toLocaleString('fr-FR') }} {{ country.population < 1 ? 'habitant' : 'habitants' }}
                     </p>
@@ -39,7 +39,7 @@
 
 <script>
 
-import CountryModal from '@/components/CountryModal.vue'
+import CountryModal from '@/components/Layout/CountryModal.vue'
 
 export default {
     name: 'CardDesign',
@@ -81,8 +81,8 @@ export default {
 }
 
 .country-card img {
-    width: 10px;
-    height: 10%;
+    max-height: 200px;
+    width: auto;
     object-fit: cover;
     object-position: center;
 }
